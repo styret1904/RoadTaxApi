@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+    <PackageReference Include="Nager.Date" Version="1.25.9" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Utilities\" />
+    <Folder Include="Tests\" />
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="WeatherForecast.cs" />
+    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Utilities\Rates.cs" />
+    <Compile Remove="Utilities\IRateCalculator.cs" />
+    <Compile Remove="Models\IEntity.cs" />
+    <Compile Remove="Models\ToEntityState.cs" />
+    <Compile Remove="Repositories\IRepository.cs" />
+    <Compile Remove="Utilities\ControllerHelper.cs" />
+    <Compile Remove="Utilities\Holidays.cs" />
+    <Compile Remove="Utilities\UtilityMethods.cs" />
+  </ItemGroup>
+</Project>
